@@ -5,8 +5,6 @@
  */
 package status;
 
-import java.util.Scanner;
-
 /** This class takes String input from user 
  * and calls method statusDetail to print the 
  * status of User-Rejected,Pending,Processing and Approved.
@@ -17,17 +15,25 @@ import java.util.Scanner;
  * @author srinivsi 
  */
 public class Status {
-
+    
+    public enum  StatusCode { 
+        code[] = ["ZERO" , "ONE" ,"TWO","THREE" ];
+    }
+        
+    
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args)
     {
-    Scanner in =new Scanner(System.in);
-    System.out.println("Enter the user status code (zero,one,two,three) in string");
-    String code = in.next();
-    StausUser t= new StausUser();
-    t.statusDetail(code); 
+        
+         
+         
+         
+        
     }
     
 }
+
+
