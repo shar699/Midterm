@@ -5,16 +5,21 @@
  */
 package status;
 
+import status.Status.StatusCode;
+
 /**
  * MidTerm-Exam
  * @author srinivsi
  */
 public class StausUser 
 {
-   public void statusDetail(String code)
+   public void statusDetail()
 {
-switch(code.toUpperCase())
-        {
+      for(StatusCode status: Status.StatusCode.values()){
+          System.out.println(status);
+          
+      }
+        /*{
         case "ZERO": System.out.println("REJECTED");
         break;
         case "ONE": System.out.println("PENDING");
@@ -28,7 +33,7 @@ switch(code.toUpperCase())
         default:
          System.out.println("NOT VALID CODE");
         break;
-        }
+        }*/
 }
  
 }
